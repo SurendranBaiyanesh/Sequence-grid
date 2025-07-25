@@ -1,0 +1,8 @@
+E:\#Azure\GridCharacters\bin\Debug\GridCharacters.exe.config
+E:\#Azure\GridCharacters\bin\Debug\GridCharacters.exe
+E:\#Azure\GridCharacters\bin\Debug\GridCharacters.pdb
+E:\#Azure\GridCharacters\obj\Debug\GridCharacters.csproj.AssemblyReference.cache
+E:\#Azure\GridCharacters\obj\Debug\GridCharacters.csproj.CoreCompileInputs.cache
+E:\#Azure\GridCharacters\obj\Debug\GridCharacters.exe
+E:\#Azure\GridCharacters\obj\Debug\GridCharacters.pdb
+E:\#Azure\GridCharacters\obj\Debug\GridCharacters.exe.config
