@@ -65,10 +65,10 @@ namespace GridCharacters
             int nIndex = liCharacter.IndexOf(strInput[0]);
             if (nIndex < 0) return false;
 
-            return Test(0, 0, strInput, liCharacter, nNestedArrayLength);
+            return SequenceGrid(0, 0, strInput, liCharacter, nNestedArrayLength);
         }
 
-        private bool Test(int nIndex ,int nLastCharacterIndex, string strInput, List<char> liCharacter, int nNestedArrayLength)
+        private bool SequenceGrid(int nIndex ,int nLastCharacterIndex, string strInput, List<char> liCharacter, int nNestedArrayLength)
         {
             if (nIndex + 1 == strInput.Length) return true;
 
@@ -81,19 +81,19 @@ namespace GridCharacters
 
             if(nRightSiblingIndex < liCharacter.Count && cSiblingCharacter == liCharacter.ElementAt(nRightSiblingIndex))
             {
-                Test(nIndex + 1, nRightSiblingIndex, strInput, liCharacter, nNestedArrayLength);
+                SequenceGrid(nIndex + 1, nRightSiblingIndex, strInput, liCharacter, nNestedArrayLength);
             }
             else if(nBottomSiblingIndex < liCharacter.Count && cSiblingCharacter == liCharacter.ElementAt(nBottomSiblingIndex))
             {
-                Test(nIndex + 1, nBottomSiblingIndex, strInput, liCharacter, nNestedArrayLength);
+                SequenceGrid(nIndex + 1, nBottomSiblingIndex, strInput, liCharacter, nNestedArrayLength);
             } 
             else if(nLeftSiblingIndex > 0 && cSiblingCharacter == liCharacter.ElementAt(nLeftSiblingIndex)) 
             {
-                Test(nIndex + 1, nLeftSiblingIndex, strInput, liCharacter, nNestedArrayLength);
+                SequenceGrid(nIndex + 1, nLeftSiblingIndex, strInput, liCharacter, nNestedArrayLength);
             }
             else if(nTopSiblingIndex > 0 && cSiblingCharacter == liCharacter.ElementAt(nTopSiblingIndex))
             {
-                Test(nIndex + 1, nTopSiblingIndex, strInput, liCharacter, nNestedArrayLength);
+                SequenceGrid(nIndex + 1, nTopSiblingIndex, strInput, liCharacter, nNestedArrayLength);
             }
             else return false;
 
